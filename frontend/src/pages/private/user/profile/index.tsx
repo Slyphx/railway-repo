@@ -20,6 +20,17 @@ function ProfilePage() {
   return (
     <div>
       <PageTitle title="Profile" />
+      <div className="mt-5 flex items-center gap-4">
+  <img
+    src={currentUser?.avatar || "/default-user.png"} // fallback image
+    alt="Profile"
+    className="w-20 h-20 rounded-full object-cover border border-gray-300"
+  />
+  <div>
+    <h2 className="text-xl font-bold">{currentUser?.name}</h2>
+    <p className="text-sm text-gray-500">{currentUser?.email}</p>
+  </div>
+</div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-7">
         {getUserProperty("ID", currentUser?._id || "")}

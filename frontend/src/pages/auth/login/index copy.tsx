@@ -34,7 +34,7 @@ function LoginPage() {
           onFinish={onFinish}
         >
           <h1 className="text-2xl font-bold text-primary">
-            Login to your CrowdSpark account
+            Login to your CrowdSpk account
           </h1>
 
           <hr />
