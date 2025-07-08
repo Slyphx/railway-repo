@@ -1,11 +1,11 @@
 import express from "express";
-
 const app = express();
+
 import dotenv from "dotenv";
+dotenv.config();
 import cookieParser from "cookie-parser";
 import connectMongoDB from "./config/db-config.js";
 
-dotenv.config();
 
 connectMongoDB();
 
